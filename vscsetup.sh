@@ -13,6 +13,12 @@ fi
 # default extensions
 ext="hnw.vscode-auto-open-markdown-preview"
 
+if command -v git >/dev/null 2>&1; then
+    # install useful git related extensions
+    ext="$ext
+    michelemelluso.gitignore"
+fi
+
 if command -v php >/dev/null 2>&1; then
     # install useful PHP extensions
     ext="$ext
