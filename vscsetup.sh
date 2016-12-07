@@ -13,7 +13,7 @@ fi
 # default extensions
 ext="hnw.vscode-auto-open-markdown-preview"
 
-if command -v php; then
+if command -v php >/dev/null 2>&1; then
     # install useful PHP extensions
     ext="$ext
     felixfbecker.php-debug
