@@ -27,6 +27,5 @@ if command -v php >/dev/null 2>&1; then
 fi
 
 for i in $ext; do
-    echo "$i"
-    #code --install-extension "$i"
+    code --install-extension "$i"
 done
