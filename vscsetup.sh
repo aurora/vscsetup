@@ -11,7 +11,8 @@ if ! command -v code >/dev/null 2>&1; then
 fi
 
 # default extensions
-ext="hnw.vscode-auto-open-markdown-preview"
+ext="hnw.vscode-auto-open-markdown-preview
+rafaelmaiolla.remote-vscode"
 
 if command -v git >/dev/null 2>&1; then
     # install useful git related extensions
