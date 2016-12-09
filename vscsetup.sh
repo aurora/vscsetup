@@ -27,6 +27,12 @@ if command -v php >/dev/null 2>&1; then
     felixfbecker.php-intellisense"
 fi
 
+if command -v nim >/dev/null 2>&1; then
+    # install useful nim related extensions
+    ext="$ext
+    kosz78.nim"
+fi
+
 for i in $ext; do
     code --install-extension "$i"
 done
